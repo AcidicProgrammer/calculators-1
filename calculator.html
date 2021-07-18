@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+  <head>
+    <meta charset = "utf-8">
+      <link rel = "stylesheet" href = "style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+  </head>
+  <body>
+
+          <div class = "calc-container">
+          <form name = "calculator">
+            <table>
+             <td><tr><input type = "text" id = "calcOutput" placeholder = "000" name = "output" disabled></tr></td>
+                <tr>
+                  <td><input type = "button" onClick = "calculator.output.value = ''" value = "AC" class = "calcBtns"></td>
+                  <td><input type = "button" onClick = "root(2)" value = "√" class = "calcBtns"></td>
+                  <td><input type = "button" onClick = "squared(2)" value = "x²" class = "calcBtns"></td>
+                  <td><input type = "button" onClick = "calculator.output.value += '+'" value = "+" class = "calcBtns"></td>
+                </tr>
+              <tr>
+                <td><input type = "button" onClick = "compute(1)" value = "1" class = "calcNumBtns"></td>
+                <td><input type = "button" onClick = "compute(2)" value = "2" class = "calcNumBtns"></td>
+                <td><input type = "button" onClick = "compute(3)" value = "3" class = "calcNumBtns"></td>
+                <td><input type = "button" onClick = "compute('-')" value = "−" class = "calcBtns"></td>
+              </tr>
+              <tr>
+                <td><input type = "button" onClick = "compute(4)" value = "4" class = "calcNumBtns"></td>
+                <td><input type = "button" onClick = "compute(5)" value = "5" class = "calcNumBtns"></td>
+                <td><input type = "button" onClick = "compute(6)" value = "6" class = "calcNumBtns"></td>
+                <td><input type = "button" onClick = "compute('*')" value = "×" class = "calcBtns"></td>
+              </tr>
+              <tr>
+                <td><input type = "button" onClick = "compute(7)" value = "7" class = "calcNumBtns"></td>
+                <td><input type = "button" onClick = "compute(8)" value = "8" class = "calcNumBtns"></td>
+                <td><input type = "button" onClick = "compute(9)" value = "9" class = "calcNumBtns"></td>
+                <td><input type = "button" onClick = "compute('/')" value = "÷" class = "calcBtns"></td>
+              </tr>
+              <tr>
+                <td><input type = "button" onClick = "percent()" value = "%" class = "calcBtns"></td>
+                <td><input type = "button" onClick = "compute(0)" value = "0" class = "calcNumBtns"></td>
+                <td><input type = "button" onClick = "compute('.')" value = "." class = "calcBtns"></td>
+                <td><input type = "button" onClick = "calculate()" value = "=" id = "equals" class = "calcBtns"></td>
+              </tr>
+            </table>
+            </form>
+          </div>
+
+
+    <script src = "script.js"></script>
+  </body>
+</html>
