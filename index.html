@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+  <head>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+
+    <a href = "calculator.html" style = "color: white">Calculator</a>
+    <a href = "miToKmConverter.html" style = "color: white">Speed Converter</a>
+    <a href = "quadraticCalculator.html" style = "color: white">Quadratic Roots Calculator</a>
+
+
+    <br>
+    <br>
+  <div class = "container">
+    <h1 class = "title"><u>Temperature Converter</u></h1>
+   <div class = "secondContainer">
+      <label class = "labels">Fahrenheit: </label><input type = "number" oninput = "converter(this.value)" value = "" placeholder = "Fahrenheit" id = "farenheit" class = "inputFields"><label class = "labels">°F</label>
+      <br>
+      <label class = "labels">Celcius: </label><input type = "number" oninput = "converter(this.value)" value = "" placeholder = "Celcius" id = "celcius" class = "inputFields"><label class = "labels">°C</label>
+      <br>
+      <label class = "labels">Kelvin: </label><input type = "number" oninput = "converter(this.value)" value = "" placeholder = "Kelvin" id = "kelvin" class = "inputFields"><label class = "labels">°K</label>
+      <br>
+      <label class = "labels">Rankine: </label><input type = "number" oninput = "converter(this.value)" value = "" placeholder = "Rankine" id = "rankine" class = "inputFields"><label class = "labels">°R</label>
+    </div>
+  </div>
+
+
+    <script src = "script.js"></script>
+  </body>
+</html>
